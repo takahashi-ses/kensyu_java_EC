@@ -31,6 +31,8 @@ a {
 
 .table-img img {
 	width: 200px;
+	display: block;
+	margin-right: 24px;
 }
 
 .cart-img {

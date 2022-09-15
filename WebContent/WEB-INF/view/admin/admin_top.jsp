@@ -63,7 +63,7 @@ if (dtoList.size() >= 3){
 	<div class="admin_button_matome">
 		<a class="btn btn-success" href="AdminPastListing">過去の出品</a>
 		<a class="btn btn-success" href="AdminProductAddition">商品追加</a>
-		<a class="btn btn-success" href="AdminProductDeletion">商品削除</a>
+		<a class="btn btn-success" href="#">商品削除</a>
 		<a class="btn btn-success" href="AdminRegistrantInfoManagement">登録者情報管理</a>
 	</div>
 </body>

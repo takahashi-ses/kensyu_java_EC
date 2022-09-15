@@ -27,15 +27,15 @@ String updateMessage = (String)request.getAttribute("UPDATE_MESSAGE");
 		<h4><span><%= updateMessage %></span></h4>
 		<% for (int i = 0; i < list.size(); i++) {
 			OrderHistoryDto dto = list.get(i); %>
-			<table>
+			<table class="mt-3">
 	            <tbody>
 	              <tr>
 	                <td rowspan="5" class="table-img">
-	                    <a href="#?id=<%= dto.getItemId() %>">
+	                    <a href="ItemDetail?id=<%= dto.getItemId() %>">
 	                    <% if (dto.getPicture() == null ) { %>
-	                      <img src="img/noimage.png">
+	                      <img src="img/noimage.jpg">
 	                    <% }else { %>
-	                      <img src="img/<%= dto.getPicture() %>" >
+	                      <img src="img/<%= dto.getPicture() %>">
 	                    <% } %>
 	                    </a>
 	                </td>
