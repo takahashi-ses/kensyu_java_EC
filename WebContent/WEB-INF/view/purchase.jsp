@@ -27,7 +27,7 @@ String picture = "https://dummyimage.com/450x300/dee2e6/6c757d.jpg";
 	<div class="container">
 		<h2>こちらの商品を購入します</h2>
 
-		<div class="row">
+		<div class="row mt-5">
 			<div class="col-md">
 
 				<table class="table cart-table">
@@ -37,7 +37,7 @@ String picture = "https://dummyimage.com/450x300/dee2e6/6c757d.jpg";
 							<th scope="col">商品名</th>
 							<th scope="col">価格</th>
 							<th scope="col">数量</th>
-							<th scope="col">合計金額</th>
+							<th scope="col">金額</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -52,9 +52,9 @@ String picture = "https://dummyimage.com/450x300/dee2e6/6c757d.jpg";
                             	<img class="cart-img" src="<%= picture %>" alt="..." />
                             </td>
 							<td><%=dto.getItems_name()%></td>
-							<td><%=dto.getItems_price()%></td>
+							<td><%=dto.getItems_price()%>円</td>
 							<td><%=dto.getNumber()%></td>
-							<td><%=dto.getTotalPrice()%></td>
+							<td><%=dto.getTotalPrice()%>円</td>
 						</tr>
 						<%
 							}
@@ -62,7 +62,7 @@ String picture = "https://dummyimage.com/450x300/dee2e6/6c757d.jpg";
 					</tbody>
 				</table>
 				<div>
-					<h5 class="text-center mt-3">
+					<h5 class="mt-5 text-center">
 						購入金額&emsp;<span><%=purchase_price%>円</span>
 					</h5>
 				</div>
@@ -70,7 +70,7 @@ String picture = "https://dummyimage.com/450x300/dee2e6/6c757d.jpg";
 					<div>
 						<a class="btn btn-success" href="Cart">カートへ戻る</a><br>
 					</div>
-					<form action="Purchase" method="get">
+					<form action="Purchase" method="post">
 						<input type="hidden" name="purchase" value="true">
 						<input type="hidden" name="purchase_price"
 							value="<%=purchase_price%>">

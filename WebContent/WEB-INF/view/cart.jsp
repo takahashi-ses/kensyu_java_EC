@@ -25,9 +25,9 @@ for (int i = 0; i < CartDtoList.size(); i++) {
 <main>
 	<div class="container">
 	<h2>カート内容</h2>
-		<div>
-			<ul>
-				<li>カートの合計&emsp;<span><%= purchase_price %>円</span></li>
+		<div class="cart-table">
+			<ul class="text-end">
+				<li><h5>カートの合計&emsp;<span><%= purchase_price %>円</span></h5></li>
 				<li>
 					<form action="Cart" method="post">
 						<input type="hidden" name="purchase-check" value="true">
@@ -50,7 +50,7 @@ for (int i = 0; i < CartDtoList.size(); i++) {
                             <th scope="col">商品名</th>
                             <th scope="col">価格</th>
                             <th scope="col">数量</th>
-                            <th scope="col">合計金額</th>
+                            <th scope="col">金額</th>
                             <th scope="col"></th>
                         </tr>
                     </thead>
